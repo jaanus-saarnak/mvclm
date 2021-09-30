@@ -64,7 +64,7 @@ All passwords are: password
 
 MvcLM v1.0 - MVC Framework with Login Manager
 
-Release date:
+Release date: 2021.09.30
 
 LICENSE AND DISCLAIMER
 

@@ -21,24 +21,10 @@
  */
 
 
-
-
-if (isset($_SERVER['REMOTE_ADDR']) && ($_SERVER['REMOTE_ADDR'] == '127.0.0.1' || $_SERVER['REMOTE_ADDR'] ==  '::1')) {
-
-    /**
-     * Localhost project path without '/' at the end
-     */
-    $projectFolderPath = 'C:/xampp/htdocs/production/mvclm.com/project/demo';
-
-} else {
-
-    die();
-
-    /**
-     * Server project path without '/' at the end
-     */
-    $projectFolderPath = '/home/codingtu/projects/mvclm.com/demo';
-}
+/**
+ * Server project path without '/' at the end
+ */
+$projectFolderPath = '/home/user/mvclm.com/project';
 
 
 /**

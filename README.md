@@ -46,11 +46,13 @@ Back-end: PHP, MySQL, Composer
 
 Step 1 - Create MySQL database and import file "database.sql" into it
 
-Step 1 - Edit website url and database login details in project/config.php file
+Step 2 - Update website url and database login details in project/config.php file
 
-Step 3 - Upload files to your server
+Step 3 - Update server project path in public/index.php file
 
-Step 4 - Edit index.php path in .htaccess file if your website is in a folder
+Step 4 - Upload files to your server
+
+Step 5 - Edit index.php path in .htaccess file if your website is in a folder
 
 
 # Administrator Login

@@ -1,6 +1,7 @@
--- MvcLM v1.0 - MVC Framework with Login Manager
+wa-- MvcLM v1.0 - MVC Framework with Login Manager
 --
--- Release date: 2021.09.30
+-- Release date:
+-- https://www.MvcLM.com
 --
 -- LICENSE AND DISCLAIMER
 --
@@ -14,8 +15,6 @@
 -- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 -- SOFTWARE.
---
--- Software website: https://www.MvcLM.com
 
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";

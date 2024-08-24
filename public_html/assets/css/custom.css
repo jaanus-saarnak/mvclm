@@ -1,0 +1,463 @@
+/*
+ * MvcLM v1.0 - MVC Framework with Login Manager
+ * Copyright (c) 2021 Jaanus Saarnak
+ *
+ * LICENSE AND DISCLAIMER
+ *
+ * THIS SOFTWARE CAN BE USED ON ONE DOMAIN FOR TESTING USE ONLY.
+ * ALL OTHER RIGHTS ARE RESERVED.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * Software website: https://www.MvcLM.com
+ */
+
+/*
+ * ---------------------------------------------
+ * General styles
+ * ---------------------------------------------
+ */
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a.username-link:link, a.username-link:visited, a.username-link:hover, a.username-link:active {
+    font-weight:bold;
+}
+
+a.mvclm-nav-link:link, a.mvclm-nav-link:visited, a.mvclm-nav-link:hover, a.mvclm-nav-link:active {
+    text-decoration: none !important;
+    color: white;
+}
+
+.page-links{
+    margin-top: 10px !important;
+}
+
+table, th, td {
+    text-align: center;
+}
+
+td {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    overflow-wrap: break-word !important;
+}
+
+body {
+    background-color: white;
+}
+
+footer {
+    line-height: 24px !important;
+    background-color: #fafafa !important;
+    font-size: 14px !important;
+    border: none !important;
+}
+
+/*
+ * ---------------------------------------------
+ * Navigation
+ * ---------------------------------------------
+ */
+#sidebar {
+    background-color: #fafafa;
+}
+
+.sidebar-header {
+    font-size: 18px;
+    background-color: #4e21b7;
+}
+
+.sidebar-brand {
+    font-size: 20px;
+    background-color: #4e21b7;
+    color:white;
+}
+
+.header-toggler {
+    margin-inline-start: -14px;
+    color: white !important;
+}
+
+header {
+    border-bottom: unset;
+    background-color: #4e21b7 !important;
+    color: white;
+}
+
+.avatar-triangle {
+    color: white;
+    margin-left: 4px;
+}
+
+.register-link {
+    margin-right: 20px !important;
+    color: white !important;
+    font-size: 17px !important;
+}
+
+.login-link {
+    color: white !important;
+    font-size: 17px !important;
+}
+
+/*
+ * ---------------------------------------------
+ * Flash Message
+ * ---------------------------------------------
+ */
+.alert {
+    padding-top: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 15px !important;
+    margin-top: -10px !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: -20px !important;
+    border: 1px solid transparent;
+    border-radius: 0.15rem;
+    text-align: center !important;
+}
+
+/*
+ * ---------------------------------------------
+ * Page Not Found
+ * ---------------------------------------------
+ */
+.message-div {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 60px;
+    margin-bottom: -30px;
+}
+
+/*
+ * ---------------------------------------------
+ * Home Page
+ * ---------------------------------------------
+ */
+.home-page table {
+    width:80%;
+    margin: 4% auto 30px;"
+}
+
+/*
+ * ---------------------------------------------
+ * Login Page
+ * ---------------------------------------------
+ */
+#login .login-header {
+    margin-top: 7%;
+    text-align: center;
+    font-size: 17px;
+    padding-bottom: 4px;
+    color: #58595a;
+}
+
+#login .login-form {
+    width: 18rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    text-align: center !important;
+}
+
+#login .login-button {
+    width: 55%;
+    padding: 9px 16px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+#login .floating-label .input-field {
+    position: relative;
+}
+
+#login .floating-label .input-field input {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 15px;
+    background: transparent;
+    color: #000000;
+    outline: none;
+    border: 1px solid #ced4da;
+    height: 45px;
+    line-height: 1.25;
+}
+
+#login .floating-label .input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: gray;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+#login .floating-label input:focus {
+    border: 1px solid #0d6efd;
+}
+
+#login .floating-label input:focus ~ label,
+#login .floating-label input:valid ~ label {
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 7px;
+    background: #ffffff;
+    color: #0d6efd;
+}
+
+/*
+ * ---------------------------------------------
+ * Terms and Privacy Page
+ * ---------------------------------------------
+ */
+#terms-privacy .container {
+    margin-top: 4%;
+    max-width: 800px;
+    padding-bottom: 60px;
+}
+
+#terms-privacy p {
+    text-align: justify;
+}
+
+#terms-privacy h5 {
+    margin-bottom: 20px;
+}
+
+/*
+ * ---------------------------------------------
+ * Register Page
+ * ---------------------------------------------
+ */
+#register {
+    padding-bottom:130px;
+}
+
+#register .register-header {
+    margin-top: 6%;
+    margin-bottom: 4px;
+    text-align: center;
+    font-size: 17px;
+    color: #58595a;
+}
+
+#register .register-form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    text-align: center !important;
+}
+
+#register .floating-label .input-field {
+    position: relative;
+}
+
+#register .floating-label .input-field input {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 15px;
+    background: transparent;
+    color: #000000;
+    outline: none;
+    border: 1px solid #ced4da;
+    height: 45px;
+    line-height: 1.25;
+}
+
+#register .floating-label .input-field label {
+    position: absolute;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+    transition: 0.3s;
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 7px;
+    background: #ffffff;
+    color: #0d6efd;
+}
+
+#register .floating-label input:focus {
+    border: 1px solid #0d6efd;
+}
+
+#username-status {
+    color: red;
+    font-size: 12px;
+}
+
+#register .login-button {
+    width: 55%;
+    padding: 9px 16px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+/*
+ * ---------------------------------------------
+ * Search Page
+ * ---------------------------------------------
+ */
+#search .search-header {
+    margin-top: 7%;
+    text-align: center;
+    font-size: 17px;
+    color: #58595a;
+}
+
+#search .search-form {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 27px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    text-align: center !important;
+}
+
+#search .floating-label .input-field {
+    position: relative;
+}
+
+#search .floating-label .input-field input {
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 15px;
+    background: transparent;
+    color: #000000;
+    outline: none;
+    border: 1px solid #ced4da;
+    height: 45px;
+    line-height: 1.25;
+}
+
+#search .floating-label .input-field label {
+    position: absolute;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+    transition: 0.3s;
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    padding: 0 7px;
+    background: #ffffff;
+    color: #0d6efd;
+}
+
+#search .floating-label input:focus {
+    border: 1px solid #0d6efd;
+}
+
+#search .search-button {
+    width: 55%;
+    padding: 9px 16px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+}
+
+#search #search-results {
+    padding-bottom:60px;
+    padding-top:30px;
+}
+
+#search #search-results .card {
+    margin: 10px !important;
+}
+
+/*
+ * ---------------------------------------------
+ * User Profile
+ * ---------------------------------------------
+ */
+#user-profile {
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:50px;
+    margin-top:6%;
+    width: 90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user-profile .card {
+    max-width:630px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#user-profile .admin-area-label {
+    margin-left:24px;
+    margin-top:50px;
+    font-weight: bold;
+}
+
+#user-profile .admin-area-description {
+    border:1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    padding-bottom:0px;
+    padding-top:5px;
+    margin-top: 40px;
+}
+
+#user-profile .admin-delete-button {
+    margin:0px;
+}
+
+#user-profile .form-group {
+    margin-bottom: 1rem !important;
+}
+
+.admin-area-description {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+

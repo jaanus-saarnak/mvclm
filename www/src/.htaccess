@@ -1,0 +1,3 @@
+# Denies web access to everything in this folder.
+
+Require all denied

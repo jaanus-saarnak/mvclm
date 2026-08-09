@@ -1,0 +1,17 @@
+{
+    "name": "mvclm/framework",
+    "description": "MVCLM PHP Boilerplate - Simple and efficient MVC framework",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-openssl": "*",
+        "ext-mysqli": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/"
+        }
+    }
+}

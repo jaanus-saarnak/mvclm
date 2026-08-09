@@ -1,0 +1,39 @@
+MIT License
+
+Copyright (c) 2021 Jaanus Saarnak
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---
+
+THIRD-PARTY CODE
+
+The licence above applies to the code written for MVCLM. It does not apply to the
+third-party code distributed under www/assets/vendor/, which is used under its own
+terms:
+
+  jQuery 1.11.1      MIT              www/assets/vendor/jquery/LICENSE.txt
+  Chart.js 4.5.1     MIT              www/assets/vendor/chartjs/LICENSE.md
+  DataTables 1.13.7  MIT              www/assets/vendor/datatables/LICENSE.txt
+
+Everything distributed here is under the MIT license. The Inter webfont is not
+bundled: it is under the SIL Open Font License and is loaded from Google Fonts
+at runtime, so no file in this repository carries a license other than MIT.
+

@@ -1,0 +1,18 @@
+
+# Machine settings and secrets. One per install, never committed. It sits here
+# rather than in www/ so the web server can never serve it. The tracked template
+# is env.example.php.
+env.php
+
+# Dependencies
+/www/src/vendor/
+node_modules/
+
+# Log files
+*.log
+
+# JetBrains IDE
+.idea/
+
+.git/
+

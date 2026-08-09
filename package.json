@@ -1,0 +1,14 @@
+{
+  "name": "mvclm-framework",
+  "private": true,
+  "license": "MIT",
+  "description": "Install this if you change the classes in the markup and need to rebuild it.",
+  "scripts": {
+    "build:css": "tailwindcss --input www/assets/css/app-source.css --output www/assets/css/app.css",
+    "watch:css": "tailwindcss --input www/assets/css/app-source.css --output www/assets/css/app.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

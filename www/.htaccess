@@ -1,0 +1,14 @@
+# Sends every request that is not a real file or directory to index.php,
+# passing the original path along as the query string. That is where the router
+# reads it from. Requires mod_rewrite and AllowOverride.
+
+RewriteEngine On
+RewriteBase /
+
+# Skip rewriting for existing files, directories, and symbolic links
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+# Route all requests to the application entry point
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]
